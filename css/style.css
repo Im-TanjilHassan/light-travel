@@ -135,13 +135,12 @@ section{
 }
 
 
-#submit-btn{
-    width: 10.875rem;
-    background-color: var(--primary-color);
-    color: var(--btn-txt-color);
-    font-weight: bold;
-    margin-right: 0 !important;
-    cursor: pointer;
+.primary-btn {
+    text-decoration: none;
+   padding: 2% 6%;
+   border-radius: 0.5rem;
+   color: var(--btn-txt-color);
+   background-color: var(--primary-color);
 }
 
 .search{
@@ -151,9 +150,113 @@ section{
     left: 79%;
 }
 
+/* main */
+
+/* our popular tour section */
+
+.popular-tour{
+    display: flex;
+}
+
+.tour-descrb{
+    width: 50%;
+    padding: 2%;
+}
+
+.mountain-img{
+    width: 50%;
+    padding: 2%;
+}
+
+.mountain-img img{
+    width: 100%;
+}
+
+.section-title{
+    color: var(--secondary-heading-color);
+    font-size: var(--section-heading-size);
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+
+.primary-text{
+    color: var(--p-txt-color);
+    font-size: var(--p-txt-size);
+    margin-bottom: 5%;
+}
+
+.tour-descrb ul{
+    margin-left: 4%;
+    color: var(--p-txt-color);
+    font-size: var(--p-txt-size);
+}
+
+.tour-descrb ul li{
+    margin-bottom: 5%;
+}
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 576px) {
+
+    /*header*/
+    /*banner section*/
+
+    .navigation ul{
+        display: none;
+    }
+
+    .banner{
+        height: 60vh;
+    }
+
+    .banner h1{
+        font-size: 2rem;
+        margin-top: 35%;
+        margin-bottom: 18%;
+    }
+    .banner-input{
+        margin-top: 15%;
+        padding: 3% 3%;
+    }
+
+    .banner-input input{
+        margin-bottom: 3%;
+    }
+
+    .down-arrow{
+        right: 5%;
+        top: 32%;
+    }
+
+    .down-arrow2{
+        left: 67%;
+        top: 55%;
+    }
+
+    .search{
+        left: 29%;
+        top: 75%;
+    }
+
+    .primary-btn{
+        display: inline-block;
+        padding: 3% 17%;
+    }
+
+    /*main*/
+    /*our popular tour section*/
+    .popular-tour{
+        flex-direction: column;
+    }
+
+    .tour-descrb{
+        width: 100%;
+    }
+
+    .mountain-img{
+        width: 100%;
+    }
+
 
 }
