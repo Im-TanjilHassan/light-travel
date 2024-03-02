@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: "Mulish", sans-serif;
+}
+
+body{
+    padding: 0 7%;
+}
+
+section{
+    margin: 3% 0%;
+}
+
+:root{
+    --primary-color: #FF5400;
+    --btn-txt-color: white;
+    --banner-txt-color: white;
+    --secondary-heading-color: black;
+    --p-txt-color: rgba(19, 19, 24, 0.70);
+    --section-heading-size: 2.5rem;
+    --card-heading-size: 1.5rem;
+    --p-txt-size: 1rem;
+
+}
+
+/* Header style */
+
+/*navigation */
+
+.web-logo{
+    display: flex;
+}
+
+.web-title{
+    font-size: 2.25rem;
+    color: 131318;
+    margin-left: 2rem;
+}
+
+.web-title::first-letter{
+    color:var(--primary-color);
+}
+
+.web-title span{
+    color: var(--primary-color);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding: 1% 1%;
+}
+
+.navigation ul{
+    display: flex;
+    margin-top: 1%;
+}
+
+.navigation ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #424247;
+    font-weight: bold;
+}
+
+.navigation ul li a:hover{
+    color: var(--primary-color);
+}
+
+/* Banner section */
+
+.banner{
+    height: 70vh;
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 39.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% 0;
+    padding: 4%;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 5% 0;
+}
+
+.banner p{
+    margin-bottom: 5%;
+    padding: 0 10%;
+    font-size: var(--p-txt-size);
+}
+
+.banner-input{
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 1rem;
+    padding: 1% 0%;
+    width: 75%;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-input input{
+    padding: 2% 1%;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid white;
+    margin-right: 2%;
+}
+
+.down-arrow{
+    position: absolute;
+    color: rgba(19, 19, 24, 0.50);
+    top: 40%;
+    left: 44%;
+    cursor: pointer;
+}
+
+.down-arrow2{
+    position: absolute;
+    color: rgba(19, 19, 24, 0.50);
+    top: 40%;
+    left: 69%;
+    cursor: pointer;
+}
+
+
+#submit-btn{
+    width: 10.875rem;
+    background-color: var(--primary-color);
+    color: var(--btn-txt-color);
+    font-weight: bold;
+    margin-right: 0 !important;
+    cursor: pointer;
+}
+
+.search{
+    position: absolute;
+    color: var(--btn-txt-color);
+    top: 40%;
+    left: 79%;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 600px){
+
+}
