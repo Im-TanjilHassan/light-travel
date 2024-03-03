@@ -380,6 +380,46 @@ section{
 
 /* customer review bonus section */
 
+.users-review{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 15px;
+}
+
+.users-card{
+    padding: 10% 8%;
+    border-radius: 1rem;
+    border-top: 3px solid #FF5400;
+    border-bottom: 3px solid #FF5400;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 10px 10px 15px rgb(189, 187, 187);
+}
+
+.review-txt{
+    margin-bottom: 15%;
+    font-size: 1.3rem;
+}
+
+.user{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user-img img{
+    border: 3px solid var(--primary-color);
+    border-radius: 100%;
+    width: 70%;
+}
+
+.rating > p, i{
+    margin-bottom: 10%;
+}
+
+.rating i{
+    color: var(--primary-color);
+}
 
 /* Mobile Responsive */
 
@@ -493,6 +533,11 @@ section{
 
     .video-container{
         width: auto;
+    }
+
+    /* customer review bonus section */
+    .users-review{
+        grid-template-columns: 1fr;
     }
 
 }
