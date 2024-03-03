@@ -62,6 +62,13 @@ section{
 
 /*navigation */
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding: 1% 1%;
+}
+
 .web-logo{
     display: flex;
 }
@@ -72,19 +79,16 @@ section{
     margin-left: 2rem;
 }
 
+.menu-icon{
+    display: none !important;
+}
+
 .web-title::first-letter{
     color:var(--primary-color);
 }
 
 .web-title span{
     color: var(--primary-color);
-}
-
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3%;
-    padding: 1% 1%;
 }
 
 .navigation ul{
@@ -429,7 +433,6 @@ section{
 
 .newsletter{
     width: 50%;
-    border: 1px solid red;
     padding: 5%;
 }
 
@@ -438,7 +441,6 @@ section{
 }
 
 .newsletter form{
-    border: 1px solid steelblue;
     padding: 3%;
 }
 
@@ -461,7 +463,6 @@ section{
 
 .newsletter-img{
     width: 50%;
-    border: 1px solid steelblue;
     position: relative;
     overflow: hidden;
 }
@@ -488,8 +489,32 @@ section{
 
 /* footer */
 
+footer{
+    text-align: center;
+    padding-bottom: 5%;
+}
 
-/* Mobile Responsive */
+.footer-logo{
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+
+.social-link{
+    border: 1px solid red;
+}
+
+.fa-brands{
+    font-size: 2rem;
+    color: black;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+.fa-brands:hover{
+    color: var(--primary-color);
+}
+
+/********* Mobile Responsive ***********/
 
 @media screen and (max-width: 576px) {
 
@@ -498,6 +523,25 @@ section{
 
     .navigation ul{
         display: none;
+    }
+
+    .web-logo{
+        width: 70%;
+    }
+
+    .web-logo img{
+        height: 75%;
+    }
+
+    .web-title{
+        font-size: 1.6rem;
+        margin-top: 3%;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 2rem;
+        padding: 1%;
     }
 
     .banner{
@@ -631,5 +675,14 @@ section{
     }
 
     /* footer */
+
+    footer{
+        margin-top: 15%;
+    }
+
+    .footer-logo{
+        margin: auto;
+        margin-bottom: 5%;
+    }
 
 }
