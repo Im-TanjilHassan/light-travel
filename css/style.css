@@ -48,6 +48,11 @@ section{
     margin-bottom: 5%;
 }
 
+.container-title{
+    font-size: var(--card-heading-size);
+    margin-bottom: 5%;
+}
+
 .card-title{
     font-size: var(--card-heading-size);
     margin-bottom: 5%;
@@ -341,6 +346,40 @@ section{
     margin-bottom: 8%;
 }
 
+#service-btn{
+    margin-top: 8%;
+    margin-left: 37%;
+    display: inline-block;
+}
+
+/* get lost section */
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.txt-container{
+    width: 50%;
+    padding: 5%;
+}
+
+.txt-container ul li{
+    margin-bottom: 8%;
+    margin-left: 4%;
+}
+
+.video-container{
+    width: 50%;
+    padding: 5% 1%;
+}
+
+.video-container video{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* customer review bonus section */
+
 
 /* Mobile Responsive */
 
@@ -437,6 +476,23 @@ section{
         width: auto;
         margin-top: 50%;
         background-color: white;
+    }
+
+    #service-btn{
+        margin: 5% 16%;
+    }
+
+    /* get lost section */
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .txt-container{
+        width: auto;
+    }
+
+    .video-container{
+        width: auto;
     }
 
 }
