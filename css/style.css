@@ -539,7 +539,7 @@ footer{
     }
 
     .menu-icon{
-        display: block;
+        display: block !important;
         font-size: 2rem;
         padding: 1%;
     }
